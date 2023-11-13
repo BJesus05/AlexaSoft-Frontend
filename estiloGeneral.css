@@ -5,3 +5,14 @@ body nav .textoNav{
     font-size: 1.4em !important;
 }
 
+/*Para cambiar el cursor*/
+.clickeable {
+    cursor: pointer;
+}
+
+/*Colores generales*/
+
+/*Borde vinotinto*/
+body .bordeVino{
+    border: #73293D solid 3px;
+}
