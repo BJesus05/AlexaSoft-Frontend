@@ -14,6 +14,11 @@ body nav .textoNav{
 
 /*Borde vinotinto*/
 body .bordeVino{
-    border: #73293D solid 3px;
-    border-radius: 10px;
+    border: #73293D solid 3px !important;
+    border-radius: 10px !important;
+}
+
+/*Fondo vinotinto*/
+body .fondoVino{
+    background-color: #73293D !important;
 }
