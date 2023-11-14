@@ -39,7 +39,7 @@
                             <i class="fa fa-user fa-1x"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item textoNav" href="#">Usuario</a></li>
+                            <li><a class="dropdown-item textoNav" href="../subUsuario/informacionUsuario.html">Usuario</a></li>
 
                             <hr class="dropdown-divider">
                             <li>
@@ -59,15 +59,16 @@
                 <h1 class="text-center">Aquí están tus productos</h1>
             </div>
             <div class="col-3"></div>
-        </div> <!--Fin Row-->
+        </div>
+    
         <br><br>
+    
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
                 <div class="row bordeVino p-3">
                     <div class="table-responsive ">
                         <table class=" table textoNav ">
-
                             <tr class="text-md-start">
                                 <th class="" style="width: 40%;" scope="row">Nombre:</th>
                                 <td class="" style="width: 60%;">Fede Federico Fernandez Fabio</td>
@@ -85,29 +86,58 @@
                                 <td style="width: 10%;"><img src="../../../images/image2.png"
                                         class="img-thumbnail padding" style="width: 100px;" alt="..."></td>
                             </tr>
-                            <tr class="text-md-center">
+                            <tr class="text-md-start"><!-- Utiliza un th vacío para alinear la segunda imagen -->
+                                <th class="" style="width: 40%;" scope="row"></th>
                                 <td style="width: 10%;"><img src="../../../images/image1.jpeg"
                                         class="img-thumbnail padding" style="width: 100px;" alt="..."></td>
                             </tr>
                         </table>
                     </div>
-                    <div class="row ">
+                    <div class="row">
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#editarInfo">Cancelar</button>
+                            <!-- Modifica el botón Cancelar para cerrar el modal -->
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-dismiss="modal" onclick="redirigirCancelar()">Cancelar</button>
                         </div>
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal"
-                                data-bs-target="#editarInfo">Confirmar</button>
+                            <!-- Modifica el botón Confirmar para abrir el modal de confirmación -->
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#confirmacionModal">Confirmar</button>
                         </div>
                     </div>
-
-                </div><!--Fin Row-->
+                </div>
             </div>
-            <div class="col-3"></div>
-        </div><!--Fin Row-->
-        <br><br>
-    </div> <!--Fin Container-->
+        </div>
+    
+        <!-- Modal de Confirmación -->
+        <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmacionModalLabel">Compra/Cotización Confirmada</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        La compra/cotización se ha realizado correctamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn fondoVino text-light" onclick="redirigirContinuar()">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            // Función para redirigir a la página de cancelación
+            function redirigirCancelar() {
+                window.location.href = '../subVentas/carritoCompras.html';
+            }
+    
+            // Función para redirigir a la página de confirmación
+            function redirigirContinuar() {
+                window.location.href = '../subUsuario/informacionUsuario.html';
+            }
+        </script>
+    </div>
+    
 
     <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
         <!-- Grid container -->
