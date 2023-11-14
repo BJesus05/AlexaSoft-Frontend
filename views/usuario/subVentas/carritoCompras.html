@@ -28,41 +28,113 @@
             <div class="collapse navbar-collapse position-absolute end-0 me-5" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item px-3">
-                        <a class="nav-link textoNav" aria-current="page"
-                            href="../subUsuario/informacionUsuario.html">Cuenta</a>
+                        <a class="nav-link textoNav" aria-current="page" href="#"><strong>Tienda</strong></a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link textoNav" aria-current="page" href="#">Tienda</a>
+                        <a class="nav-link textoNav" href="../subAgendamiento/AgendamientoUsuario.html">Citas</a>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link textoNav" href="#">Citas</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user fa-1x"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item textoNav"
+                                    href="../subUsuario/informacionUsuario.html">Usuario</a></li>
+
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="nav-link textoNav" aria-current="page" href="../index.html">Cerrar Sesión</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <br><br>
-    <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col-sm-5 col-md-6">
-                <img src="../../../images/image1.jpeg" class="img-thumbnail padding" alt="...">
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <div class="row bordeVino p-3">
+                    <div class="table-responsive">
+                        <table class="table textoNav">
+                            <tr class="text-center">
+                                <td style="width: 10%;"><img src="../../../images/image1.jpeg" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="d-grid gap-2 col-5 mx-auto">
+                            <p style="text-align: center;">Shampoo</p>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                <img src="../../../images/image2.png" class="img-thumbnail box-shadow" alt="...">
+            <br>
+            <div class="col-5">
+                <div class="row bordeVino p-3">
+                    <div class="table-responsive">
+                        <table class="table textoNav">
+                            <tr class="text-center">
+                                <td style="width: 10%;"><img src="../../../images/image2.png" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="d-grid gap-2 col-5 mx-auto">
+                            <p style="text-align: center;">Acondicionador</p>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col-sm-6 col-md-5 col-lg-6">
-                <img src="../../../images/image3.png" class="img-thumbnail box-shadow" alt="...">
+        </div><!-- Fin de la primera fila -->
+    
+        <!-- Espacio entre filas -->
+        <div class="row mt-4"></div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <div class="row bordeVino p-3">
+                    <div class="table-responsive">
+                        <table class="table textoNav">
+                            <tr class="text-center">
+                                <td style="width: 10%;"><img src="../../../images/image3.png" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="d-grid gap-2 col-5 mx-auto">
+                            <p style="text-align: center;">Esmalte</p>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
-                <img src="../../../images/image4.jpg" class="img-thumbnail box-shadow" alt="...">
+            <br>
+            <div class="col-5">
+                <div class="row bordeVino p-3">
+                    <div class="table-responsive">
+                        <table class="table textoNav">
+                            <tr class="text-center">
+                                <td style="width: 10%;"><img src="../../../images/image4.jpg" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="d-grid gap-2 col-5 mx-auto">
+                            <p style="text-align: center;">Minoxidil</p>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div> <!--Fin Container-->
-
+        </div><!-- Fin de la segunda fila -->
+    </div><!-- Fin Container -->
+    
     <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
         <!-- Grid container -->
         <div class="container p-4"></div>
@@ -74,6 +146,7 @@
         </div>
         <!-- Copyright -->
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
