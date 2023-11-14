@@ -61,14 +61,16 @@
                     <div class="table-responsive">
                         <table class="table textoNav">
                             <tr class="text-center">
-                                <td style="width: 10%;"><img src="../../../images/image1.jpeg" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                                <td style="width: 10%;"><img src="../../../images/image1.jpeg"
+                                        class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
                             </tr>
                         </table>
                     </div>
                     <div class="row">
                         <div class="d-grid gap-2 col-5 mx-auto">
                             <p style="text-align: center;">Shampoo</p>
-                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#confirmacionModal">Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -79,21 +81,47 @@
                     <div class="table-responsive">
                         <table class="table textoNav">
                             <tr class="text-center">
-                                <td style="width: 10%;"><img src="../../../images/image2.png" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                                <td style="width: 10%;"><img src="../../../images/image2.png"
+                                        class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
                             </tr>
                         </table>
                     </div>
                     <div class="row">
                         <div class="d-grid gap-2 col-5 mx-auto">
                             <p style="text-align: center;">Acondicionador</p>
-                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#confirmacionModal">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div><!-- Fin de la primera fila -->
-    
-        <!-- Espacio entre filas -->
+
+        <!-- Espacio entre filas para Modal  -->
+        <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmacionModalLabel">Producto Agregado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        El producto ha sido agregado correctamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn fondoVino text-light" onclick="redirigir()">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function redirigir() {
+                window.location.href = 'checkOut.html';
+            }
+        </script>
+
         <div class="row mt-4"></div>
         <div class="row">
             <div class="col-1"></div>
@@ -102,14 +130,16 @@
                     <div class="table-responsive">
                         <table class="table textoNav">
                             <tr class="text-center">
-                                <td style="width: 10%;"><img src="../../../images/image3.png" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                                <td style="width: 10%;"><img src="../../../images/image3.png"
+                                        class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
                             </tr>
                         </table>
                     </div>
                     <div class="row">
                         <div class="d-grid gap-2 col-5 mx-auto">
                             <p style="text-align: center;">Esmalte</p>
-                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#confirmacionModal">Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -120,21 +150,23 @@
                     <div class="table-responsive">
                         <table class="table textoNav">
                             <tr class="text-center">
-                                <td style="width: 10%;"><img src="../../../images/image4.jpg" class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
+                                <td style="width: 10%;"><img src="../../../images/image4.jpg"
+                                        class="img-thumbnail padding" style="width: 150px;" alt="..."></td>
                             </tr>
                         </table>
                     </div>
                     <div class="row">
                         <div class="d-grid gap-2 col-5 mx-auto">
                             <p style="text-align: center;">Minoxidil</p>
-                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal" data-bs-target="#editarInfo">Agregar</button>
+                            <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#confirmacionModal">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div><!-- Fin de la segunda fila -->
     </div><!-- Fin Container -->
-    
+
     <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
         <!-- Grid container -->
         <div class="container p-4"></div>
@@ -146,7 +178,7 @@
         </div>
         <!-- Copyright -->
     </footer>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
