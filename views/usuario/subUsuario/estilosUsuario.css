@@ -2,3 +2,13 @@
 table th{
     text-align: left;
 }
+.noDecorado{
+    text-decoration: none ;
+}
+.encogerse:hover{
+    transform: scale(0.9);
+    
+}
+.encogerse{
+    transition: transform 0.3s ease
+}
