@@ -22,3 +22,19 @@ body .bordeVino{
 body .fondoVino{
     background-color: #73293D !important;
 }
+
+/*Borde oro*/
+body .bordeOro{
+    border: #D8B468 solid 3px !important;
+    border-radius: 10px !important;
+}
+
+/*Fondo oro*/
+body .fondoOro{
+    background-color: #D8B468 !important;
+}
+
+/*Texto oro*/
+body .textoOro{
+    background-color: #D8B468 !important;
+}
