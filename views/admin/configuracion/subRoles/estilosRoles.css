@@ -1,0 +1,8 @@
+.table {
+    overflow: auto;
+}
+
+.table .dropdown {
+    position: static;
+}
+

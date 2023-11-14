@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Usuario</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="../../../estiloGeneral.css">
     <link rel="stylesheet" href="estilosUsuario.css">
@@ -29,40 +29,44 @@
                         <a class="nav-link textoNav" aria-current="page" href="../index.html">Cerrar Sesión</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link textoNav" aria-current="page" href="../subVentas/carritoCompras.html">Tienda</a>
+                        <a class="nav-link textoNav" aria-current="page"
+                            href="../subVentas/carritoCompras.html">Tienda</a>
                     </li>
                     <li class="nav-item px-3">
                         <a class="nav-link textoNav" href="#">Citas</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <i class="fa fa-user fa-1x"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                          <li><a class="dropdown-item textoNav" href="#">Usuario</a></li>
-                          
-                          <hr class="dropdown-divider">
-                          <li><p class="dropdown-item textoNav" onclick="cerrarSesion()">Cerrar Sesión</p></li>
-        
+                            <li><a class="dropdown-item textoNav" href="#">Usuario</a></li>
+
+                            <hr class="dropdown-divider">
+                            <li>
+                                <p class="dropdown-item textoNav" onclick="cerrarSesion()">Cerrar Sesión</p>
+                            </li>
+
                         </ul>
-                      </li>
+                    </li>
 
                 </ul>
             </div>
         </div>
     </nav>
     <br><br>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-              <h1 class="text-center">¡Bienvenido Fede!</h1>
+                <h1 class="text-center">¡Bienvenido Fede!</h1>
             </div>
             <div class="col-3"></div>
-          </div> <!--Fin Row-->
-          <br><br>
+        </div> <!--Fin Row-->
+        <br><br>
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
@@ -101,40 +105,40 @@
                         </div>
                         <div class="d-grid gap-2 col-6 mx-auto">
                             <button type="button" class="btn fondoVino text-light btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#editarContraseña">Cambiar Contraseña</button>
+                                data-bs-target="#editarContraseña">Cambiar Contraseña</button>
                         </div>
                     </div>
 
                 </div><!--Fin Row-->
                 <br>
                 <div class="row">
-                    
+
                     <div class="col mx-auto p-0 me-1  ">
                         <a href="#" class="noDecorado ">
-                        <div class="text-center card bordeOro mb-3 encogerse" style="min-width: auto;">
-                            <div class="card-header fs-5 ">Crear Cita</div>
-                            <div class="card-body fondoOro">
-                                <i class="fa fa-calendar-plus fa-5x"></i>
+                            <div class="text-center card bordeOro mb-3 encogerse" style="min-width: auto;">
+                                <div class="card-header fs-5 ">Crear Cita</div>
+                                <div class="card-body fondoOro">
+                                    <i class="fa fa-calendar-plus fa-5x"></i>
+                                </div>
                             </div>
-                          </div>
                         </a>
                     </div>
                     <div class="col mx-auto p-0 me-1  ">
                         <a href="#" class="noDecorado ">
-                        <div class="text-center card bordeOro mb-3 encogerse" style="min-width: auto;">
-                            <div class="card-header fs-5 ">Crear Cotización</div>
-                            <div class="card-body fondoOro">
-                                <i class="fa fa-receipt fa-5x"></i>
-                                
+                            <div class="text-center card bordeOro mb-3 encogerse" style="min-width: auto;">
+                                <div class="card-header fs-5 ">Crear Cotización</div>
+                                <div class="card-body fondoOro">
+                                    <i class="fa fa-receipt fa-5x"></i>
+
+                                </div>
                             </div>
-                          </div>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-3"></div>
         </div><!--Fin Row-->
-        
+
 
         <br><br>
     </div> <!--Fin Container-->
@@ -214,25 +218,25 @@
                         <div class="mb-3 row">
                             <label for="inputName" class="fs-5 col-3 col-form-label">Contraseña Actual:</label>
                             <div class="col-9 align-items-center justify-content-center d-flex">
-                                <input type="password" class=" fs-5 form-control" name="inputName"
-                                     id="inputName" placeholder="Pon tu contraseña actual!">
+                                <input type="password" class=" fs-5 form-control" name="inputName" id="inputName"
+                                    placeholder="Pon tu contraseña actual!">
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
                             <label for="inputName" class="fs-5 col-3 col-form-label">Nueva Contraseña:</label>
                             <div class="col-9 align-items-center justify-content-center d-flex">
-                                <input type="password" class=" fs-5 form-control" name="inputName"
-                                     id="inputName" placeholder="Pon tu nueva contraseña!">
+                                <input type="password" class=" fs-5 form-control" name="inputName" id="inputName"
+                                    placeholder="Pon tu nueva contraseña!">
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
                             <label for="inputName" class="fs-5 col-3 col-form-label">Confirmar Contraseña:</label>
                             <div class="col-9 align-items-center justify-content-center d-flex">
-                                <input type="password" class=" fs-5 form-control" name="inputName"
-                                     id="inputName" placeholder="Confirma tu contraseña!">
+                                <input type="password" class=" fs-5 form-control" name="inputName" id="inputName"
+                                    placeholder="Confirma tu contraseña!">
                             </div>
                         </div><!--Fin Row-->
-                        
+
 
 
                 </div>
@@ -270,7 +274,7 @@
                 title: '¿Quiéres guardar los cambios?',
                 showCancelButton: true,
                 confirmButtonText: 'Si',
-                cancelButtonText:"No"
+                cancelButtonText: "No"
             }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
@@ -285,7 +289,7 @@
                 title: '¿Estas seguro de que quieres cambiar la contraseña?',
                 showCancelButton: true,
                 confirmButtonText: 'Si',
-                cancelButtonText:"No"
+                cancelButtonText: "No"
             }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
@@ -300,7 +304,7 @@
                 title: '¿Estas seguro de que quieres cerrar sesión?',
                 showCancelButton: true,
                 confirmButtonText: 'Cerrar Sesión',
-                cancelButtonText:"Cancelar"
+                cancelButtonText: "Cancelar"
             }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
