@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Salidad Insumos</title>
     <link rel="stylesheet" href="../../../../estiloGeneral.css">
+    <link rel="stylesheet" href="../css/styleCompras.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css">
+</head>
   <body>
     
     <nav class="navbar bg-body-tertiary border-bottom border-dark sinFondo fixed-top sticky-top">
@@ -64,13 +66,13 @@
                   Compras
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item textoNav" href="comrpas/html/salidaInsumos.html">Retirar Insumos</a></li>
+                  <li><a class="dropdown-item textoNav" href="compras/html/salidaInsumos.html">Retirar Insumos</a></li>
                   
                   <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="comrpas/html/compras.html">Compras</a></li>
+                  <li><a class="dropdown-item textoNav" href="compras/html/compras.html">Compras</a></li>
 
                   <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="comrpas/html/proveedor.html">Proveedores</a></li>
+                  <li><a class="dropdown-item textoNav" href="compras/html/proveedor.html">Proveedores</a></li>
                 </ul>
               </li>
 
@@ -106,41 +108,41 @@
 
     
     
-
+    <h2 class="centrados">Salida de Insumos</h2>
     <div class="container">
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">ID</th>
+            <th scope="col">idProducto</th>
+            <th scope="col">fecha de reiro</th>
+            <th scope="col">cantidad</th>
+            <th scope="col">Motivo cancelamiento</th>
+            <th scope="col">Opciones</th>
+
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+            <td>Shampoou</td>
+            <td>>11-12-2023</td>
+            <td>1</td>
+            <td>Se cancela</td>
+            <td>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                  </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+              </svg></a></td>
+            </tr>
         </tbody>
       </table>
 
       <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Crear compras
+    Crear Salida
   </button>
 </div>
   
@@ -149,35 +151,37 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Salida De Insumos</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <form>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
+                    <label for="Producto" class="form-label">Producto</label>
+                    <input type="number" class="form-control" id="Producto">
+                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                  <label for="fecha-retiro" class="form-label">fecha retiro</label>
+                  <input type="date" class="form-control" id="fecha-retiro">
+               </div>
+
+                <div class="mb-3">
+                  <label for="cantidad" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" id="cantidad">
+               </div>
+               <div class="mb-3">
+                <label for="motivo-cancelamiento" class="form-label">Motivo cancelamiento</label>
+                <input type="text" class="form-control" id="motivo-cancelamiento">
+             </div>
               </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
         </div>
       </div>
     </div>
   </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
