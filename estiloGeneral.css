@@ -38,3 +38,10 @@ body .fondoOro{
 body .textoOro{
     background-color: #D8B468 !important;
 }
+
+/*Footer pegado al pie*/
+body footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
