@@ -10,7 +10,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
@@ -57,23 +57,24 @@
       <div class="col-3"></div>
 
       <div class="col-6">
-        <form>
+        <form id="login">
           <div class="mb-3 row">
-            <label for="inputName" class="fs-4 col-3 col-form-label">Correo:</label>
+            <label class="fs-4 col-3 col-form-label">Correo:</label>
             <div class="col-9">
-              <input type="email" class=" fs-4 form-control" name="inputName" id="inputName" placeholder="Correo">
+              <input type="email" class=" fs-4 form-control" name="correo" id="correo" placeholder="Correo" required>
             </div>
           </div><!--Fin Row-->
           <div class="mb-3 row">
-            <label for="inputName" class="fs-4 col-3 col-form-label">Contraseña:</label>
+            <label class="fs-4 col-3 col-form-label">Contraseña:</label>
             <div class="col-9">
-              <input type="password" class="fs-4 form-control" name="inputName" id="inputName" placeholder="Contraseña">
+              <input type="password" class="fs-4 form-control" name="contrasena" id="contrasena"
+                placeholder="Contraseña" required>
             </div>
           </div><!--Fin Row-->
 
           <div class="mb-3 row">
             <div class="text-center">
-              <a href="../subUsuario/informacionUsuario.html" class="btn btn-lg fondoVino text-light">Ingresar</a>
+              <a id="botonLogin" class="btn btn-lg fondoVino text-light">Ingresar</a>
             </div>
           </div><!--Fin Row-->
         </form>
@@ -102,7 +103,7 @@
   </div> <!--Fin Container-->
 
   <footer class="text-center mt-5" style="background-color: #D8B468;">
-    
+
 
     <!-- Copyright -->
     <div class="text-center p-3">
@@ -116,6 +117,52 @@
     crossorigin="anonymous"></script>
 
   <script>
+    /*Validar formulario editar*/
+    //Enviar Formulario
+    document.getElementById("botonLogin").addEventListener("click", async (e) => {
+      e.preventDefault();
+      let correo = document.getElementById("correo").value;
+      let contrasena = document.getElementById("contrasena").value;
+      if (correo && contrasena) {
+        window.location.href = "../subUsuario/informacionUsuario.html"
+      } else {
+        await Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: "Revisa que los campos no esten vacios"
+        })
+      }
+    })
+    //Salir input correo
+    document.getElementById("correo").addEventListener("focusout", (e) => {
+      e.preventDefault();
+      let correo = document.getElementById("correo").value;
+      if (correo == "") {
+        campoVacio("correo")
+      }
+    })
+    //Salir input contrasena
+    document.getElementById("contrasena").addEventListener("focusout", (e) => {
+      e.preventDefault();
+      let contrasena = document.getElementById("contrasena").value;
+      if (contrasena == "") {
+        campoVacio("contrasena")
+      }
+    })
+
+    /*FIN Validar formulario editar*/
+
+
+    //Alerta campo vacio
+    function campoVacio(campo) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'El campo ' + campo + " no puede estar vacio"
+      })
+    }
+
+    //Funcion volver
     function volver() {
       window.history.back();
     }

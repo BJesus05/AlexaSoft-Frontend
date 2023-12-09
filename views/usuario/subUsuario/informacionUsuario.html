@@ -191,8 +191,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" id="enviarEditar"
-                        class="btn fondoVino text-light">Guardar cambios</button>
+                    <button type="button" id="enviarEditar" class="btn fondoVino text-light">Guardar cambios</button>
                 </div>
                 </form><!--Fin Form-->
             </div>
@@ -237,7 +236,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn fondoVino text-light" id="enviarContrasena">Guardar cambios</button>
+                    <button type="button" class="btn fondoVino text-light" id="enviarContrasena">Guardar
+                        cambios</button>
                 </div>
                 </form><!--Fin Form-->
             </div>
@@ -308,15 +308,15 @@
             let contrasenaNueva = document.getElementById("contrasenaNueva").value;
             let confirmarContrasena = document.getElementById("confirmarContrasena").value;
             if (contrasenaActual && contrasenaNueva && confirmarContrasena) {
-                if (contrasenaNueva != confirmarContrasena){
+                if (contrasenaNueva != confirmarContrasena) {
                     await Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: "El confirmar contraseña no coincide"
-                })
-                }else{
-                   await cambiarContrasena() 
-                }   
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: "El confirmar contraseña no coincide"
+                    })
+                } else {
+                    await cambiarContrasena()
+                }
             } else {
                 await Swal.fire({
                     icon: 'error',
@@ -373,7 +373,7 @@
                 showCancelButton: true,
                 confirmButtonText: 'Si',
                 cancelButtonText: "No"
-            }).then( async(result) => {
+            }).then(async (result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
                     await Swal.fire('¡Guardados!', '', 'success')

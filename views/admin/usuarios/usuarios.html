@@ -10,104 +10,123 @@
     <link rel="stylesheet" href="./estilosUsuarios.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
 
-     
+
     <nav class="navbar bg-body-tertiary border-bottom border-dark sinFondo fixed-top sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../../../usuario/index.html">
-            <img src="../../../../images/logoAlexa.jpg" alt="Bootstrap" width="150" height="auto">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="me-2 textoNav">Opciones</span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <a class="navbar-brand" href="../../../usuario/index.html">
+                <img src="../../../../images/logoAlexa.jpg" alt="Bootstrap" width="150" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="me-2 textoNav">Opciones</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Agendamiento
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../agendamiento/html/AgendamientoAdmin.html">Crear nueva cita</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../agendamiento/html/CitasAdmin.html">Citas</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../agendamiento/html/HorarioAdmin.html">Horario</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../agendamiento/html/ColaboradoresAdmin.html">Colaboradores</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../servicios/html/paquetes.html">Paquetes</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../servicios/html/servicios.html">Servicios</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../servicios/html/productos.html">Productos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Compras
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav" href="../compras/html/salidaInsumos.html">Retirar
+                                        Insumos</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav" href="../compras/html/compras.html">Compras</a>
+                                </li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../compras/html/proveedor.html">Proveedores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ventas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../ventas/html/cotizaciones.html">Cotizaciones</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav" href="../ventas/html/ventas.html">Ventas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuarios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../configuracion/subRoles/roles.html">Roles</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav" href="#">Usuarios</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Agendamiento
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../agendamiento/html/AgendamientoAdmin.html">Crear nueva cita</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../agendamiento/html/CitasAdmin.html">Citas</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../agendamiento/html/HorarioAdmin.html">Horario</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../agendamiento/html/ColaboradoresAdmin.html">Colaboradores</a></li>
-                  </ul>
-                </li>
-                
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Servicios
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../servicios/html/paquetes.html">Paquetes</a></li>
-                    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../servicios/html/servicios.html">Servicios</a></li>
-    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../servicios/html/productos.html">Productos</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Compras
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../compras/html/salidaInsumos.html">Retirar Insumos</a></li>
-                    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../compras/html/compras.html">Compras</a></li>
-    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../compras/html/proveedor.html">Proveedores</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Ventas
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../ventas/html/cotizaciones.html">Cotizaciones</a></li>
-                    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../ventas/html/ventas.html">Ventas</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Usuarios
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../configuracion/subRoles/roles.html">Roles</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="#">Usuarios</a></li>
-                  </ul>
-                </li>
-                
-              </ul>
-              
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
     <br><br>
 
     <div class="container">
@@ -133,8 +152,8 @@
             </div>
         </div> <!-- Fin Row -->
         <br>
-        <div class="table-responsive bordeOro px-3">
-            <table class="table fs-5">
+        <div class="table-responsive" style="max-height: 250px;">
+            <table class="table fs-5 table-bordered table-responsive ">
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -167,7 +186,8 @@
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li class="text-center px-3">
                                         <button class="dropdown-item" data-bs-toggle="modal"
-                                data-bs-target="#editarInfo"><i class="fa fa-pencil fa-lg"></i> Modificar</button>
+                                            data-bs-target="#editarInfo"><i class="fa fa-pencil fa-lg"></i>
+                                            Modificar</button>
 
                                     </li>
                                     <hr class="dropdown-divider">
@@ -201,32 +221,32 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="formulario">
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Nombre:</label>
+                            <label class="fs-5 col-3 col-form-label">Nombre:</label>
                             <div class="col-9">
-                                <input type="text" class=" fs-5 form-control" name="inputName"
-                                    value="Juan" id="inputName" placeholder="Nombre">
+                                <input type="text" class=" fs-5 form-control" name="nombre" value="Juan" id="nombre"
+                                    placeholder="Nombre">
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Correo:</label>
+                            <label class="fs-5 col-3 col-form-label">Correo:</label>
                             <div class="col-9">
-                                <input type="email" class=" fs-5 form-control" name="inputName" value="	juanjuanito@gmail.com"
-                                    id="inputName" placeholder="Correo">
+                                <input type="email" class=" fs-5 form-control" name="correo"
+                                    value="	juanjuanito@gmail.com" id="correo" placeholder="Correo">
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
                             <label for="inputName" class="fs-5 col-3 col-form-label">Cédula:</label>
                             <div class="col-9">
-                                <input type="number" disabled class=" fs-5 form-control" name="inputName" value="1024521458"
-                                    id="inputName" placeholder="Cédula">
+                                <input type="number" disabled class=" fs-5 form-control" name="inputName"
+                                    value="1024521458" id="inputName" placeholder="Cédula">
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
                             <label for="inputName" class="fs-5 col-3 col-form-label">Teléfono:</label>
                             <div class="col-9">
-                                <input type="number" class=" fs-5 form-control" name="inputName" id="inputName"
+                                <input type="number" class=" fs-5 form-control" name="telefono" id="telefono"
                                     value="3012541488" placeholder="Teléfono">
                             </div>
                         </div><!--Fin Row-->
@@ -254,8 +274,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn fondoVino text-light" data-bs-dismiss="modal" onclick="cambiosRealizados()"
-                        >Guardar cambios</button>
+                    <button type="button" class="btn fondoVino text-light" id="enviarEditar">Guardar cambios</button>
                 </div>
                 </form><!--Fin Form-->
             </div>
@@ -264,16 +283,67 @@
 
 
     <script>
+        //Enviar Formulario
+        document.getElementById("enviarEditar").addEventListener("click", async (e) => {
+            e.preventDefault();
+            let nombre = document.getElementById("nombre").value;
+            let correo = document.getElementById("correo").value;
+            let telefono = document.getElementById("telefono").value;
+            if (nombre && correo && telefono) {
+                await cambiosRealizados()
+            } else {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Revisa que los campos no esten vacios"
+                })
+            }
+        })
+        //Salir input nombre
+        document.getElementById("nombre").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let nombre = document.getElementById("nombre").value;
+            if (nombre == "") {
+                campoVacio("nombre")
+            }
+        })
+        //Salir input correo
+        document.getElementById("correo").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let correo = document.getElementById("correo").value;
+            if (correo == "") {
+                campoVacio("correo")
+            }
+        })
+        //Salir input telefono
+        document.getElementById("telefono").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let telefono = document.getElementById("telefono").value;
+            if (telefono == "") {
+                campoVacio("telefono")
+            }
+        })
+
+        //Alerta campo vacio
+        function campoVacio(campo) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'El campo ' + campo + " no puede estar vacio"
+            })
+        }
+
         function cambiosRealizados() {
             Swal.fire({
                 title: '¿Quiéres guardar los cambios?',
                 showCancelButton: true,
                 confirmButtonText: 'Si',
                 cancelButtonText: "No"
-            }).then((result) => {
+            }).then(async (result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    Swal.fire('¡Guardados!', '', 'success')
+                    await Swal.fire('¡Guardados!', '', 'success');
+                    await document.getElementById('formulario').submit();
                 } else if (result.isDenied) {
                     Swal.fire('Los cambios no se guardaron', '', 'info')
                 }

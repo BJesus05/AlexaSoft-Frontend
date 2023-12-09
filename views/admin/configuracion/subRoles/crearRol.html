@@ -18,95 +18,115 @@
 
     <nav class="navbar bg-body-tertiary border-bottom border-dark sinFondo fixed-top sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../../../usuario/index.html">
-            <img src="../../../../images/logoAlexa.jpg" alt="Bootstrap" width="150" height="auto">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="me-2 textoNav">Opciones</span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <a class="navbar-brand" href="../../../usuario/index.html">
+                <img src="../../../../images/logoAlexa.jpg" alt="Bootstrap" width="150" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="me-2 textoNav">Opciones</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Agendamiento
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../agendamiento/html/AgendamientoAdmin.html">Crear nueva cita</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../agendamiento/html/CitasAdmin.html">Citas</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../agendamiento/html/HorarioAdmin.html">Horario</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../agendamiento/html/ColaboradoresAdmin.html">Colaboradores</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../servicios/html/paquetes.html">Paquetes</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../servicios/html/servicios.html">Servicios</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../servicios/html/productos.html">Productos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Compras
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../compras/html/salidaInsumos.html">Retirar Insumos</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav" href="../../compras/html/compras.html">Compras</a>
+                                </li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../compras/html/proveedor.html">Proveedores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ventas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav"
+                                        href="../../ventas/html/cotizaciones.html">Cotizaciones</a></li>
+
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav" href="../../ventas/html/ventas.html">Ventas</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textoNav" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuarios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item textoNav" href="roles.html">Roles</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item textoNav" href="../../usuarios/usuarios.html">Usuarios</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Agendamiento
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../../agendamiento/html/AgendamientoAdmin.html">Crear nueva cita</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../agendamiento/html/CitasAdmin.html">Citas</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../agendamiento/html/HorarioAdmin.html">Horario</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../agendamiento/html/ColaboradoresAdmin.html">Colaboradores</a></li>
-                  </ul>
-                </li>
-                
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Servicios
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../../servicios/html/paquetes.html">Paquetes</a></li>
-                    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../servicios/html/servicios.html">Servicios</a></li>
-    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../servicios/html/productos.html">Productos</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Compras
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../../compras/html/salidaInsumos.html">Retirar Insumos</a></li>
-                    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../compras/html/compras.html">Compras</a></li>
-    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../compras/html/proveedor.html">Proveedores</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Ventas
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="../../ventas/html/cotizaciones.html">Cotizaciones</a></li>
-                    
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../ventas/html/ventas.html">Ventas</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Usuarios
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item textoNav" href="roles.html">Roles</a></li>
-                    <hr class="dropdown-divider">
-                    <li><a class="dropdown-item textoNav" href="../../usuarios/usuarios.html">Usuarios</a></li>
-                  </ul>
-                </li>
-                
-              </ul>
-              
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
     <br><br>
 
     <div class="container">
@@ -141,9 +161,9 @@
             <div class="row">
                 <div class="col-6">
                     <div class="mb-3 row">
-                        <label for="inputName" class="fs-4 col-3 col-form-label">Nombre:</label>
+                        <label class="fs-4 col-3 col-form-label">Nombre:</label>
                         <div class="col-9">
-                            <input type="text" class="fs-4 form-control" name="inputName" id="inputName"
+                            <input type="text" class="fs-4 form-control" name="nombre" id="nombre"
                                 placeholder="Nombre del Rol">
                         </div>
                     </div>
@@ -151,8 +171,8 @@
             </div>
             <br>
 
-            <div class="table-responsive bordeOro px-3" style="max-height: 250px;">
-                <table class="table fs-5">
+            <div class="table-responsive bordeVino" style="max-height: 250px;">
+                <table class="table fs-5 table-bordered table-responsive ">
                     <thead>
                         <tr>
                             <th scope="col" style="width: 10%;">ID</th>
@@ -232,7 +252,7 @@
             <br>
             <div class="mb-3 row">
                 <div class="text-center">
-                    <button type="button" onclick="guardarRol()" class="btn btn-lg fondoVino text-light">Crear
+                    <button type="button" id="botonCrear" class="btn btn-lg fondoVino text-light">Crear
                         Rol</button>
                 </div>
             </div><!--Fin Row-->
@@ -244,10 +264,44 @@
     </div>
 
     <script>
+
+        //Enviar Formulario
+        document.getElementById("botonCrear").addEventListener("click", async (e) => {
+            e.preventDefault();
+            let nombre = document.getElementById("nombre").value;
+            if (nombre) {
+                await guardarRol()
+            } else {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Revisa que los campos no esten vacios"
+                })
+            }
+        })
+        //Salir input nombre
+        document.getElementById("nombre").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let nombre = document.getElementById("nombre").value;
+            if (nombre == "") {
+                campoVacio("nombre")
+            }
+        })
+        //Alerta campo vacio
+        function campoVacio(campo) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'El campo ' + campo + " no puede estar vacio"
+            })
+        }
+
+        //Funcion Volver
         function volver() {
             window.history.back();
         }
 
+        //Confirmar guardar
         function guardarRol() {
             Swal.fire({
                 title: '¿Quieres crear el rol?',
