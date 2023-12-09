@@ -150,40 +150,40 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="formulario">
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Nombre:</label>
+                            <label class="fs-5 col-3 col-form-label">Nombre:</label>
                             <div class="col-9">
-                                <input type="text" class=" fs-5 form-control" name="inputName"
-                                    value="Fede Federico Fernandez Fabio" id="inputName" placeholder="Nombre">
+                                <input type="text" class=" fs-5 form-control" name="nombre"
+                                    value="Fede Federico Fernandez Fabio" id="nombre" placeholder="Nombre" required>
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Correo:</label>
+                            <label class="fs-5 col-3 col-form-label">Correo:</label>
                             <div class="col-9">
-                                <input type="email" class=" fs-5 form-control" name="inputName" value="feeed@gmail.com"
-                                    id="inputName" placeholder="Correo">
+                                <input type="email" class=" fs-5 form-control" name="correo" value="feeed@gmail.com"
+                                    id="correo" placeholder="Correo" required>
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Cédula:</label>
+                            <label class="fs-5 col-3 col-form-label">Cédula:</label>
                             <div class="col-9">
-                                <input type="number" class=" fs-5 form-control" name="inputName" value="102354128"
-                                    id="inputName" placeholder="Cédula">
+                                <input type="number" class=" fs-5 form-control" name="cedula" value="102354128"
+                                    id="cedula" placeholder="Cédula" disabled>
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Teléfono:</label>
+                            <label class="fs-5 col-3 col-form-label">Teléfono:</label>
                             <div class="col-9">
-                                <input type="number" class=" fs-5 form-control" name="inputName" id="inputName"
-                                    value="3012541748" placeholder="Teléfono">
+                                <input type="number" class=" fs-5 form-control" name="telefono" id="telefono"
+                                    value="3012541748" placeholder="Teléfono" required>
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Instagram:</label>
+                            <label class="fs-5 col-3 col-form-label">Instagram:</label>
                             <div class="col-9">
-                                <input type="text" class=" fs-5 form-control" name="inputName" value="@fedexArrecho"
-                                    id="inputName" placeholder="Instagram">
+                                <input type="text" class=" fs-5 form-control" name="instagram" value="@fedexArrecho"
+                                    id="instagram" placeholder="Instagram (Opcional)">
                             </div>
                         </div><!--Fin Row-->
 
@@ -191,8 +191,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn fondoVino text-light" onclick="cambiosRealizados()"
-                        data-bs-dismiss="modal">Guardar cambios</button>
+                    <button type="button" id="enviarEditar"
+                        class="btn fondoVino text-light">Guardar cambios</button>
                 </div>
                 </form><!--Fin Form-->
             </div>
@@ -209,26 +209,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="cambiarContrasena">
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Contraseña Actual:</label>
+                            <label class="fs-5 col-3 col-form-label">Contraseña Actual:</label>
                             <div class="col-9 align-items-center justify-content-center d-flex">
-                                <input type="password" class=" fs-5 form-control" name="inputName" id="inputName"
-                                    placeholder="Pon tu contraseña actual!">
+                                <input type="password" class=" fs-5 form-control" name="contrasenaActual"
+                                    id="contrasenaActual" placeholder="Pon tu contraseña actual!">
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Nueva Contraseña:</label>
+                            <label class="fs-5 col-3 col-form-label">Nueva Contraseña:</label>
                             <div class="col-9 align-items-center justify-content-center d-flex">
-                                <input type="password" class=" fs-5 form-control" name="inputName" id="inputName"
-                                    placeholder="Pon tu nueva contraseña!">
+                                <input type="password" class=" fs-5 form-control" name="contrasenaNueva"
+                                    id="contrasenaNueva" placeholder="Pon tu nueva contraseña!">
                             </div>
                         </div><!--Fin Row-->
                         <div class="mb-3 row">
-                            <label for="inputName" class="fs-5 col-3 col-form-label">Confirmar Contraseña:</label>
+                            <label class="fs-5 col-3 col-form-label">Confirmar Contraseña:</label>
                             <div class="col-9 align-items-center justify-content-center d-flex">
-                                <input type="password" class=" fs-5 form-control" name="inputName" id="inputName"
-                                    placeholder="Confirma tu contraseña!">
+                                <input type="password" class=" fs-5 form-control" name="confirmarContrasena"
+                                    id="confirmarContrasena" placeholder="Confirma tu contraseña!">
                             </div>
                         </div><!--Fin Row-->
 
@@ -237,8 +237,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn fondoVino text-light" onclick="cambiarContrasena()"
-                        data-bs-dismiss="modal">Guardar cambios</button>
+                    <button type="button" class="btn fondoVino text-light" id="enviarContrasena">Guardar cambios</button>
                 </div>
                 </form><!--Fin Form-->
             </div>
@@ -247,7 +246,7 @@
 
 
     <footer class="text-center mt-5" style="background-color: #D8B468;">
-        
+
 
         <!-- Copyright -->
         <div class="text-center p-3">
@@ -257,21 +256,128 @@
     </footer>
 
     <script>
+        /*Validar formulario editar*/
+        //Enviar Formulario
+        document.getElementById("enviarEditar").addEventListener("click", async (e) => {
+            e.preventDefault();
+            let nombre = document.getElementById("nombre").value;
+            let correo = document.getElementById("correo").value;
+            let telefono = document.getElementById("telefono").value;
+            if (nombre && correo && telefono) {
+                await cambiosRealizados()
+            } else {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Revisa que los campos no esten vacios"
+                })
+            }
+        })
+        //Salir input nombre
+        document.getElementById("nombre").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let nombre = document.getElementById("nombre").value;
+            if (nombre == "") {
+                campoVacio("nombre")
+            }
+        })
+        //Salir input correo
+        document.getElementById("correo").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let correo = document.getElementById("correo").value;
+            if (correo == "") {
+                campoVacio("correo")
+            }
+        })
+        //Salir input telefono
+        document.getElementById("telefono").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let telefono = document.getElementById("telefono").value;
+            if (telefono == "") {
+                campoVacio("telefono")
+            }
+        })
 
+        /*FIN Validar formulario editar*/
+
+        /*Validar formulario contraseña*/
+        //Enviar Formulario
+        document.getElementById("enviarContrasena").addEventListener("click", async (e) => {
+            e.preventDefault();
+            let contrasenaActual = document.getElementById("contrasenaActual").value;
+            let contrasenaNueva = document.getElementById("contrasenaNueva").value;
+            let confirmarContrasena = document.getElementById("confirmarContrasena").value;
+            if (contrasenaActual && contrasenaNueva && confirmarContrasena) {
+                if (contrasenaNueva != confirmarContrasena){
+                    await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "El confirmar contraseña no coincide"
+                })
+                }else{
+                   await cambiarContrasena() 
+                }   
+            } else {
+                await Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: "Revisa que los campos no esten vacios"
+                })
+            }
+        })
+        //Salir input contrasenaActual
+        document.getElementById("contrasenaActual").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let contrasenaActual = document.getElementById("contrasenaActual").value;
+            if (contrasenaActual == "") {
+                campoVacio("contrasenaActual")
+            }
+        })
+        //Salir input contrasenaNueva
+        document.getElementById("contrasenaNueva").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let contrasenaNueva = document.getElementById("contrasenaNueva").value;
+            if (contrasenaNueva == "") {
+                campoVacio("contrasenaNueva")
+            }
+        })
+        //Salir input confirmarContrasena
+        document.getElementById("confirmarContrasena").addEventListener("focusout", (e) => {
+            e.preventDefault();
+            let confirmarContrasena = document.getElementById("confirmarContrasena").value;
+            if (confirmarContrasena == "") {
+                campoVacio("confirmarContrasena")
+            }
+        })
+
+        /*FIN Validar formulario contraseña*/
+
+        //Alerta campo vacio
+        function campoVacio(campo) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'El campo ' + campo + " no puede estar vacio"
+            })
+        }
+
+        //Funcion volver
         function volver() {
             window.history.back();
         }
 
+        //Alerta confirmar cambios
         function cambiosRealizados() {
             Swal.fire({
                 title: '¿Quiéres guardar los cambios?',
                 showCancelButton: true,
                 confirmButtonText: 'Si',
                 cancelButtonText: "No"
-            }).then((result) => {
+            }).then( async(result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    Swal.fire('¡Guardados!', '', 'success')
+                    await Swal.fire('¡Guardados!', '', 'success')
+                    await document.getElementById('formulario').submit();
                 } else if (result.isDenied) {
                     Swal.fire('Los cambios no se guardaron', '', 'info')
                 }
@@ -283,10 +389,11 @@
                 showCancelButton: true,
                 confirmButtonText: 'Si',
                 cancelButtonText: "No"
-            }).then((result) => {
+            }).then(async (result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    Swal.fire('¡Contraseña Cambiada!', '', 'success')
+                    await Swal.fire('¡Contraseña Cambiada!', '', 'success')
+                    await document.getElementById('cambiarContrasena').submit();
                 } else if (result.isDenied) {
                     Swal.fire('La contraseña no se guardo', '', 'info')
                 }
