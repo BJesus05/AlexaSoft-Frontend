@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cotizaciones</title>
+  <title>Pedidos / Cotizaciones</title>
   <link rel="stylesheet" href="../../../../estiloGeneral.css">
   <link rel="stylesheet" href="../css/styleVentas.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -92,7 +92,7 @@
                 Ventas
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item textoNav" href="cotizaciones.html">Cotizaciones</a></li>
+                <li><a class="dropdown-item textoNav" href="cotizaciones.html">Pedidos / Cotizaciones</a></li>
 
                 <hr class="dropdown-divider">
                 <li><a class="dropdown-item textoNav" href="ventas.html">Ventas</a></li>
@@ -117,124 +117,71 @@
       </div>
     </div>
   </nav>
+  <br><br>
 
-
-
-  <h2 class="centrados">Cotizaciones</h2>
-  <div class=" container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Fecha Creación</th>
-          <th scope="col">Fecha Finalización</th>
-          <th scope="col">Estado</th>
-          <th scope="col">ID Cliente</th>
-          <th scope="col">Opciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>2023-13-11</td>
-          <td>2023-14-11</td>
-          <td>Cancelado</td>
-          <td>1</td>
-          <td>
-            <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#editarCotizacion">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil"
-                viewBox="0 0 16 16">
-                <path
-                  d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-              </svg></a> -->
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- Nuevo modal para la edición del estado -->
-    <div class="modal fade" id="editarCotizacion" tabindex="-1" aria-labelledby="editarCotizacionLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="editarCotizacionLabel">Editar Estado</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="nuevoEstado" class="form-label">Nuevo Estado</label>
-                <select class="form-select" id="nuevoEstado">
-                  <option value="Espera" selected disabled>Espera</option>
-                  <option value="Aceptado">Aceptado</option>
-                  <option value="Cancelado">Cancelado</option>
-                </select>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Guardar</button>
-          </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <h1 class="text-center">Pedidos / Cotizaciones</h1>
       </div>
-    </div>
+      <div class="col-3"></div>
+    </div> <!--Fin Row-->
+  </div>
+  <br>
 
+  <div class="contenedorGrande">
+    <div class="row">
+      <div class="col-8"></div>
 
-    <!-- Button trigger modal 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Crear Cotización
-  </button>
-</div>-->
+      <div class="col-4">
 
-    <!-- Modal 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Salida De Insumos</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                    <label for="Producto" class="form-label">Producto</label>
-                    <input type="number" class="form-control" id="Producto">
-                 </div>
-                 <div class="mb-3">
-                    <label for="Proveedor" class="form-label">Proveedor</label>
-                    <input type="number" class="form-control" id="Proveedor">
-                 </div>
-                 <div class="mb-3">
-                    <label for="unidades" class="form-label">Unidades</label>
-                    <input type="number" class="form-control" id="unidades">
-                 </div>
-                 <div class="mb-3">
-                    <label for="precio" class="form-label">Precio</label>
-                    <input type="number" class="form-control" id="precio">
-                 </div>
-                 <div class="mb-3">
-                    <label for="fecha-creacion" class="form-label">fecha Creacion</label>
-                    <input type="date" class="form-control" id="fecha-creacion">
-                 </div>
-                 <div class="mb-3">
-                    <label for="motivo-cancelamiento" class="form-label">Motivo Anular</label>
-                    <input type="text" class="form-control" id="motivo-cancelamiento">
-                 </div>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
-        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar pedidos/cotizaciones" aria-label="Search">
+          <button class="btn fondoOro text-right" type="submit">Buscar</button>
+        </form>
       </div>
-    </div>
-  </div> -->
+    </div> <!-- Fin Row -->
+    <br>
+    <div class="table-responsive" style="max-height: 250px;">
+      <table class="table fs-5 table-bordered table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Número Factura</th>
+            <th scope="col">ID Cotización</th>
+            <th scope="col">ID Colaborador</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Anulado</th>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td scope="col">1</td>
+            <td scope="col">1001</td>
+            <td scope="col">1</td>
+            <td scope="col">3</td>
+            <td scope="col">2023-11-11</td>
+            <td scope="col">No</td>
+          </tr>
+          <tr>
+            <td scope="col">2</td>
+            <td scope="col">1002</td>
+            <td scope="col">2</td>
+            <td scope="col">3</td>
+            <td scope="col">2023-12-11</td>
+            <td scope="col">Sí</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

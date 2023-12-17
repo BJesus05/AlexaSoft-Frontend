@@ -1,3 +1,16 @@
 .centrados{
     text-align: center;
 }
+
+.contenedorGrande{
+    width: 90% ;
+      margin: 0 auto; 
+      padding: 20px;
+}
+.table {
+    overflow: auto;
+}
+
+.table .dropdown {
+    position: static;
+}
