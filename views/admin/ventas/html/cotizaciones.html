@@ -1,190 +1,187 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cotizaciones</title>
-    <link rel="stylesheet" href="../../../../estiloGeneral.css">
-    <link rel="stylesheet" href="../css/styleVentas.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedidos / Cotizaciones</title>
+  <link rel="stylesheet" href="../../../../estiloGeneral.css">
+  <link rel="stylesheet" href="../css/styleVentas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/font-awesome.min.css">
 </head>
-  <body>
-    
-    <nav class="navbar bg-body-tertiary border-bottom border-dark sinFondo fixed-top sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../../../usuario/index.html">
-          <img src="../../../../images/logoAlexa.jpg" alt="Bootstrap" width="150" height="auto">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="me-2 textoNav">Opciones</span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Agendamiento
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item textoNav" href="../../agendamiento/html/AgendamientoAdmin.html">Crear nueva cita</a></li>
-                  
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../agendamiento/html/CitasAdmin.html">Citas</a></li>
 
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../agendamiento/html/HorarioAdmin.html">Horario</a></li>
+<body>
 
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../agendamiento/html/ColaboradoresAdmin.html">Colaboradores</a></li>
-                </ul>
-              </li>
-              
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servicios
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item textoNav" href="../../servicios/html/paquetes.html">Paquetes</a></li>
-                  
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../servicios/html/servicios.html">Servicios</a></li>
-
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../servicios/html/productos.html">Productos</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Compras
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item textoNav" href="../../compras/html/salidaInsumos.html">Retirar Insumos</a></li>
-                  
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../compras/html/compras.html">Compras</a></li>
-
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../compras/html/proveedor.html">Proveedores</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ventas
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item textoNav" href="cotizaciones.html">Cotizaciones</a></li>
-                  
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="ventas.html">Ventas</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Usuarios
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item textoNav" href="../../configuracion/subRoles/roles.html">Roles</a></li>
-                  <hr class="dropdown-divider">
-                  <li><a class="dropdown-item textoNav" href="../../usuarios/usuarios.html">Usuarios</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-            
-          </div>
+  <nav class="navbar bg-body-tertiary border-bottom border-dark sinFondo fixed-top sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../../usuario/index.html">
+        <img src="../../../../images/logoAlexa.jpg" alt="Bootstrap" width="150" height="auto">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="me-2 textoNav">Opciones</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </div>
-    </nav>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Agendamiento
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item textoNav" href="../../agendamiento/html/AgendamientoAdmin.html">Crear nueva
+                    cita</a></li>
 
-    
-    
-    <h2 class="centrados">Cotizaciones</h2>
-    <div class=" container">
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Fecha Creación</th>
-            <th scope="col">Fecha Finalización</th>
-            <th scope="col">Estado</th>
-            <th scope="col">ID Cliente</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>2023-13-11</td>
-            <td>2023-14-11</td>
-            <td>Aceptado</td>
-            <td>1</td>
-            <td>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                  </svg></a></td>
-          </tr>
-        </tbody>
-      </table>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="../../agendamiento/html/CitasAdmin.html">Citas</a></li>
 
-      <!-- Button trigger modal 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Crear Cotización
-  </button>
-</div>-->
-  
-  <!-- Modal 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Salida De Insumos</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                    <label for="Producto" class="form-label">Producto</label>
-                    <input type="number" class="form-control" id="Producto">
-                 </div>
-                 <div class="mb-3">
-                    <label for="Proveedor" class="form-label">Proveedor</label>
-                    <input type="number" class="form-control" id="Proveedor">
-                 </div>
-                 <div class="mb-3">
-                    <label for="unidades" class="form-label">Unidades</label>
-                    <input type="number" class="form-control" id="unidades">
-                 </div>
-                 <div class="mb-3">
-                    <label for="precio" class="form-label">Precio</label>
-                    <input type="number" class="form-control" id="precio">
-                 </div>
-                 <div class="mb-3">
-                    <label for="fecha-creacion" class="form-label">fecha Creacion</label>
-                    <input type="date" class="form-control" id="fecha-creacion">
-                 </div>
-                 <div class="mb-3">
-                    <label for="motivo-cancelamiento" class="form-label">Motivo Anular</label>
-                    <input type="text" class="form-control" id="motivo-cancelamiento">
-                 </div>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="../../agendamiento/html/HorarioAdmin.html">Horario</a></li>
+
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav"
+                    href="../../agendamiento/html/ColaboradoresAdmin.html">Colaboradores</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item textoNav" href="../../servicios/html/paquetes.html">Paquetes</a></li>
+
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="../../servicios/html/servicios.html">Servicios</a></li>
+
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="../../servicios/html/productos.html">Productos</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Compras
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item textoNav" href="../../compras/html/salidaInsumos.html">Retirar Insumos</a>
+                </li>
+
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="../../compras/html/compras.html">Compras</a></li>
+
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="../../compras/html/proveedor.html">Proveedores</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Ventas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item textoNav" href="cotizaciones.html">Pedidos / Cotizaciones</a></li>
+
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="ventas.html">Ventas</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle textoNav" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Usuarios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item textoNav" href="../../configuracion/subRoles/roles.html">Roles</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item textoNav" href="../../usuarios/usuarios.html">Usuarios</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
         </div>
       </div>
     </div>
-  </div> -->
+  </nav>
+  <br><br>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+  <div class="container">
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <h1 class="text-center">Pedidos / Cotizaciones</h1>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </div>
+  <br>
+
+  <div class="contenedorGrande">
+    <div class="row">
+      <div class="col-8"></div>
+
+      <div class="col-4">
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar pedidos/cotizaciones" aria-label="Search">
+          <button class="btn fondoOro text-right" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="table-responsive" style="max-height: 250px;">
+      <table class="table fs-5 table-bordered table-responsive ">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Número Factura</th>
+            <th scope="col">ID Cotización</th>
+            <th scope="col">ID Colaborador</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Anulado</th>
+
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td scope="col">1</td>
+            <td scope="col">1001</td>
+            <td scope="col">1</td>
+            <td scope="col">3</td>
+            <td scope="col">2023-11-11</td>
+            <td scope="col">No</td>
+          </tr>
+          <tr>
+            <td scope="col">2</td>
+            <td scope="col">1002</td>
+            <td scope="col">2</td>
+            <td scope="col">3</td>
+            <td scope="col">2023-12-11</td>
+            <td scope="col">Sí</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

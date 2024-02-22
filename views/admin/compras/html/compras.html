@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Salidad Insumos</title>
+    <title>Compras</title>
     <link rel="stylesheet" href="../../../../estiloGeneral.css">
     <link rel="stylesheet" href="../css/styleCompras.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -70,6 +70,9 @@
   
                   <hr class="dropdown-divider">
                   <li><a class="dropdown-item textoNav" href="proveedor.html">Proveedores</a></li>
+
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item textoNav" href="productos.html">Productos</a></li>
                 </ul>
               </li>
   
@@ -103,10 +106,34 @@
       </div>
     </nav>
 
-    
-    
-    <h2 class="centrados">Compras</h2>
     <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <h1 class="text-center">Compras</h1>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div> 
+    
+    <br>
+    <div class="container">
+      <div class="col-4 ms-auto">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar salida" aria-label="Search">
+          <button class="btn fondoOro text-right" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+    
+    
+   
+    <div class="container">
+      <div class="col-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Crear compras
+        </button>
+      </div>
     <table class="table">
         <thead>
           <tr>
@@ -117,6 +144,7 @@
             <th scope="col">Precio</th>
             <th scope="col">Fecha creacion</th>
             <th scope="col">Motivo anular</th>
+            <th scope="col">Estado</th>
             <th scope="col">Opciones</th>
 
           </tr>
@@ -131,6 +159,10 @@
             <td>13-11-2023</td>
             <td>Mal precio</td>
             <td>
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" >
+              <label class="form-check-label" for="flexSwitchCheckChecked1">Estado: <span class="switchText">Activo</span></label>
+          </td>
+            <td>
                 <a onclick="editarAlert()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                     <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
                   </svg></a>
@@ -142,9 +174,7 @@
       </table>
 
       <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Crear compras
-  </button>
+
 </div>
   
   <!-- Modal -->
@@ -152,7 +182,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Salida De Insumos</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Producto</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -190,8 +220,62 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="motivoCancelamientoModal" tabindex="-1" aria-labelledby="motivoCancelamientoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="motivoCancelamientoModalLabel">Motivo de Anulación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="motivo-cancelamiento" class="form-label">Motivo de Anulación</label>
+              <input type="text" class="form-control" id="motivo-cancelamiento" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="guardarAlert()">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="../js/Alertas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      // Obtén todos los elementos de interruptor en la tabla
+      var switchCheckboxes = document.querySelectorAll('.form-check-input');
+
+      // Itera sobre los elementos y agrega un evento de cambio a cada uno
+      switchCheckboxes.forEach(function (switchCheckbox, index) {
+          // Obtén el elemento del texto correspondiente a este interruptor
+          var switchText = document.querySelectorAll('.switchText')[index];
+
+          // Agrega un evento de cambio al interruptor
+          switchCheckbox.addEventListener('change', function () {
+              // Cambia el texto según el estado del interruptor
+              switchText.textContent = switchCheckbox.checked ? 'Anulado' : 'Activo';
+          });
+      });
+  </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Obtén el interruptor y el modal
+        var switchCheckbox = document.getElementById('flexSwitchCheckChecked1');
+        var motivoCancelamientoModal = new bootstrap.Modal(document.getElementById('motivoCancelamientoModal'));
+    
+        // Agrega un evento de cambio al interruptor
+        switchCheckbox.addEventListener('change', function () {
+          // Si el interruptor está activado (Anulado), muestra el modal
+          if (switchCheckbox.checked) {
+            motivoCancelamientoModal.show();
+          }
+        });
+      });
+    </script>
+  </script>
   </body>
 </html>
